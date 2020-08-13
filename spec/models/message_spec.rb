@@ -4,7 +4,7 @@ RSpec.describe Message, type: :model do
   describe '#create' do
     before do
       @message = FactoryBot.build(:message)
-      @message.image = fixture_file_upload('public/images/test_image.png.jpg')
+      @message.image = fixture_file_upload('public/images/test_image.png')
     end
 
     it 'contentとimageが存在していれば保存できること' do
